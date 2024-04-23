@@ -1,5 +1,9 @@
-<section>
-  <div class="text-[200px]">
-    test
-  </div>
+<section class="p-10 flex items-center space-x-12">
+  <card 
+    *ngFor="let post of posts"
+    [title]="post.title"
+    [imageUrl]="post.imageUrl"
+    [username]="post.username"
+    [content]="post.content"
+  ></card>
 </section>
